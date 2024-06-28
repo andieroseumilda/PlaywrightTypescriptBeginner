@@ -1,0 +1,19 @@
+{
+  "fontColor": {
+    "black1": "rgb(0, 0, 0)",
+    "black2": "rgba(0, 0, 0, 0.87)",
+    "black3": "rgba(0, 0, 0, 0.88)",
+    "black4": "rgba(0, 0, 0, 0.45)",
+    "blue": "rgb(22, 119, 255)",
+    "darkGray": "rgb(33, 37, 41)",
+    "gray": "rgb(162, 161, 161)",
+    "lightGray": "rgb(217, 217, 217)",
+    "lightPink": "rgb(253, 237, 237)",
+    "skyBlue": "rgb(64, 169, 255)",
+    "white": "rgb(255, 255, 255)"
+  },
+  "fontSize": {
+    "small": "14px",
+    "default": "16px"
+  }
+}

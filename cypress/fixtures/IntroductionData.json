@@ -1,0 +1,22 @@
+{
+  "introPageText": {
+    "firstIntro": "Seeking the services of a LGBTQ+ friendly mental health therapist or gynecologist? Engaging a lawyer to help you ensure your rainbow family or partner is protected? Finding a job at a company that will not discriminate against you for who you are? Searching for a safe housing space to live as your authentic self?",
+    "secondIntro": "PROUT aims to connect you to inclusive critical service providers under these four categories: Legal, Healthcare, Housing, & Jobs."
+  },
+  "mediaFile": {
+    "proutImage": "/assets/intro_image.0d634cf2.jpg",
+    "backgroundVideo": "/assets/prout_bg.089ab0b7.mp4"
+  },
+  "splash": {
+    "welcomeText": "Welcome to Prout!",
+    "keycodeLabel": "Key in early accesscode to enter",
+    "keycodePlaceholder": "Enter code"
+  },
+  "videoText": {
+    "first": "WELCOME TO PROUT",
+    "second": "WE CONNECT YOU TO",
+    "third": "INCLUSIVE CRITICAL ",
+    "fourth": "SERVICE PROVIDERS.",
+    "fifth": "HEALTHCARE. LEGAL. JOBS. HOUSING."
+  }
+}

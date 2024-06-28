@@ -1,0 +1,11 @@
+{
+  "signInLbl": "Sign In",
+  "passLbl": "Password",
+  "SignInPlaceholder": "Email address",
+  "PassPlaceholder": "Enter your password",
+  "forgotPass": "Forgot Password",
+  "signBtn": "Enter",
+  "createAcct": "Create Account",
+  "errorUser": "Invalid email or password",
+  "logo": "/assets/prout_logo.fcbd3826.png"
+}
