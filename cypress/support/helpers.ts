@@ -1,6 +1,13 @@
 type element = () => Cypress.Chainable<JQuery<HTMLElement>>;
 type stringType = string;
 
+export function assertElementHasBorderColor(
+  getElement: element,
+  color: stringType,
+) {
+  getElement().should('have.css', 'border-color', color);
+}
+
 export function assertElementVisible(getElement: element): void {
   getElement().should('be.visible');
 }

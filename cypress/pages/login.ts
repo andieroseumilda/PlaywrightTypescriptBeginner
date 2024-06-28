@@ -11,7 +11,7 @@ class LoginPage {
   getSignInBtn(): Cypress.Chainable<JQuery<HTMLElement>> {
     return cy.get('.custom-rainbow-button');
   }
-  getCreateAcct(): Cypress.Chainable<JQuery<HTMLElement>> {
+  getCreateAcctText(): Cypress.Chainable<JQuery<HTMLElement>> {
     return cy.get('.cursor-pointer');
   }
 }
