@@ -37,3 +37,17 @@ export function verifyEmailFormat(getElement: elementType): void {
     });
   });
 }
+export function verifyNumberField(getElement: elementType) {
+  it('should be visible', () => {
+    getElement().should('be.visible');
+  });
+  it('should accept input', () => {
+    const mobile = '12345678';
+    getElement().type(mobile).should('have.value', mobile);
+  });
+  it('should have the appropriate styling', () => {
+    getElement()
+      .focus()
+      .should('have.css', 'border-color', 'rgb(118, 118, 118)');
+  });
+}

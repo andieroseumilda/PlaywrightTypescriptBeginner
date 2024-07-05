@@ -8,6 +8,7 @@
     "darkGray": "rgb(33, 37, 41)",
     "gray": "rgb(162, 161, 161)",
     "lightGray": "rgb(217, 217, 217)",
+    "mediumGray": "rgb(118, 118, 118)",
     "lightPink": "rgb(253, 237, 237)",
     "skyBlue": "rgb(64, 169, 255)",
     "white": "rgb(255, 255, 255)"

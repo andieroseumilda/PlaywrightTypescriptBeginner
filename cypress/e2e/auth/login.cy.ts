@@ -5,7 +5,6 @@ import * as H from '@/cypress/support/helpers';
 
 const loginElement: LoginPage = new LoginPage();
 const commonElement: CommonElementsPage = new CommonElementsPage();
-let loginHelper: H.HelperModel;
 
 interface LoginUIData {
   errorUser: string;
@@ -248,5 +247,35 @@ describe('Verify the negative scenario', () => {
       },
       password: password,
     } as H.HelperModel);
+  });
+});
+describe('Verify the positive scenario for Login', () => {
+  it.only('should log in successfully with valid credentials', () => {
+    const email = 'stratpoint@yopmail.com';
+    const password = 'stratpoint@yopmail.com';
+    commonElement.getSignInTxtbox().type(email);
+    commonElement.getPasswordTxtbox().type(password);
+
+    cy.intercept('POST', 'https://torontodough.one/prout/login').as(
+      'loginRequest',
+    );
+
+    loginElement.getSignInBtn().click();
+    //Assertions
+    cy.url().should('not.include', '/login');
+
+    // check that the login is no longer available
+    commonElement.getSignInLabel().should('not.exist');
+
+    // Wait for the intercepted request and assert its properties
+    cy.wait('@loginRequest').then((interception) => {
+      expect(interception.request.method).to.equal('POST');
+      expect(interception.request.url).to.include(
+        'https://torontodough.one/prout/login',
+      );
+      expect(interception.request.body).to.include(email);
+      expect(interception.request.body).to.include(password);
+      expect(interception.response?.statusCode).to.equal(200);
+    });
   });
 });

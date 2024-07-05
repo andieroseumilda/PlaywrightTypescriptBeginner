@@ -1,5 +1,6 @@
 export interface HelperModel {
   btn: () => Cypress.Chainable<JQuery<HTMLElement>>;
+  borderColor: string;
   color: string;
   element: () => Cypress.Chainable<JQuery<HTMLElement>>;
   email: string;
@@ -22,7 +23,9 @@ export interface HelperModel {
 }
 
 export function assertElementHasBorderColor(propertiesIn: HelperModel) {
-  propertiesIn.element().should('have.css', 'border-color', propertiesIn.color);
+  propertiesIn
+    .element()
+    .should('have.css', 'border-color', propertiesIn.borderColor);
 }
 export function assertElementVisible(propertiesIn: HelperModel): void {
   propertiesIn.element().should('be.visible');
@@ -50,7 +53,14 @@ export function assertError(propertiesIn: HelperModel) {
     .background()
     .should('have.css', 'background-color', propertiesIn.error.bgcolor);
 }
-
+export function assertForceLabelIsEqual(propertiesIn: HelperModel) {
+  propertiesIn
+    .element()
+    .invoke('text')
+    .then((text) => {
+      expect(text).to.equal(propertiesIn.expectedText);
+    });
+}
 export function verifyEyeIcon(propertiesIn: HelperModel) {
   const password = 'keeppassword';
   it('should verify that the eye icon is visible', () => {

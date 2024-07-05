@@ -1,0 +1,21 @@
+{
+  "userLbl": "Username",
+  "userPlaceholder": "At least 4 characters",
+  "passlbl": "Password",
+  "passPlaceholder": "Enter your password",
+  "confirmPass": "Confirm password",
+  "confirmPlaceholder": "Confirm your password",
+  "emailLbl": "Email Address",
+  "emailPlaceholder": "Enter your email address",
+  "mobileLbl": "Singapore Mobile Number",
+  "mobileCode": "+65",
+  "mobilePlaceholder": "xxxxxxxx",
+  "agreeLbl": "I agree to the Terms of Services and Privacy Policy",
+  "ageLbl": "I'm above 18 years old",
+  "existAcctLbl": "Already have an account? Login here.",
+  "errorMessage": {
+    "lessPass": "Password should have at least 5 characters",
+    "passNotMatch": "Password doesn't match",
+    "requiredField": "Make sure all fields are valid"
+  }
+}

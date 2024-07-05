@@ -1,0 +1,18 @@
+{
+  "forgotPage": {
+    "header": "Enter your email to reset your password.",
+    "emailPlaceholder": "Enter your email"
+  },
+  "submitBtn": "Submit",
+  "changePasswordPage": {
+    "header": "Change Password",
+    "otp": "Enter your OTP",
+    "pass": "Password",
+    "passPlaceholder": "Enter your password",
+    "confirmPass": "Confirm password"
+  },
+  "errorMessage": {
+    "passNotMatch": "Password doesn't match",
+    "lessOTP": "OTP should have at least 6 characters"
+  }
+}
