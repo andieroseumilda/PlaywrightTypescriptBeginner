@@ -1,8 +1,8 @@
 {
   "signInLbl": "Sign In",
   "passLbl": "Password",
-  "SignInPlaceholder": "Email address",
-  "PassPlaceholder": "Enter your password",
+  "signInPlaceholder": "Email address",
+  "passPlaceholder": "Enter your password",
   "forgotPass": "Forgot Password",
   "signBtn": "Enter",
   "createAcct": "Create Account",
